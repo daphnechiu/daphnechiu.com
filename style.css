@@ -1,10 +1,23 @@
-html {
+* {
   cursor: url("image/cursor.svg") 2 2, pointer;
 }
 
 body {
   background: #465369;
   color: white;
+}
+
+.links {
+  position: absolute;
+  bottom: 10px;
+}
+
+.links:hover,
+.links a,
+.links a:visited,
+.links a:hover {
+  color: white;
+  cursor: url("image/cursor.svg") 2 2, pointer;
 }
 
 .my-name {
