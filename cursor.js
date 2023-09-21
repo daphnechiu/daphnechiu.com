@@ -21,13 +21,19 @@ var Dot = function () {
 // The Dot.prototype.draw() method sets the position of
 // the object's <div> node
 Dot.prototype.draw = function () {
-  this.node.style.left = this.x + "px";
-  this.node.style.top = this.y + "px";
+  this.node.style.left = this.x + 35 + "px";
+  this.node.style.top = this.y + 35 + "px";
 };
 
 // Creates the Dot objects, populates the dots array
-for (var i = 0; i < 12; i++) {
+for (var i = 0; i < 18; i++) {
   var d = new Dot();
+  if (i == 0) {
+    var span = document.createElement("span");
+    span.className = "my-name-cursor";
+    span.textContent = "daphnechiu";
+    d.node.appendChild(span);
+  }
   dots.push(d);
 }
 
