@@ -2,6 +2,13 @@
   cursor: url("image/cursor.svg") 2 2, pointer;
 }
 
+@media only screen and (max-width: 801px) {
+  .my-name-cursor,
+  .trail {
+    display: none;
+  }
+}
+
 body {
   background: #465369;
   color: white;
