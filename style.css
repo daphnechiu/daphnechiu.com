@@ -14,6 +14,40 @@ body {
   color: white;
 }
 
+.my-content {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shapes {
+  position: fixed;
+  top: 30%;
+}
+
+.square {
+  position: fixed;
+  transform: translateZ(0) translate(-50%, -50%) rotate(calc(8.92 * 1deg))
+    scaleX(1) scaleY(1) scale(1);
+  top: 25%;
+  left: 15%;
+}
+
+.triangle {
+  position: fixed;
+  bottom: 24px;
+  right: 25%;
+  transform: translateZ(0) translate(-50%, -50%) rotate(calc(-19.06 * 1deg))
+    scaleX(1) scaleY(1) scale(1);
+}
+
+.circle {
+  position: fixed;
+  right: 10%;
+}
+
 .links {
   position: absolute;
   bottom: 10px;
