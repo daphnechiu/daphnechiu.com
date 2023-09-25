@@ -9,6 +9,12 @@
   }
 }
 
+@media only screen and (min-width: 802px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
 body {
   background: #465369;
   color: white;
@@ -23,6 +29,7 @@ body {
 }
 
 .shapes {
+  z-index: -1;
   position: fixed;
   top: 30%;
 }
